@@ -1,1 +1,1 @@
-Hello
+This repository contains value files for Helm Charts used in the homework assignment
