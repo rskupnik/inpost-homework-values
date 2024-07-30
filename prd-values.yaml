@@ -1,8 +1,7 @@
-replicaCount: 3
-name: "inpost-homework-dev"
-fullname: "inpost-homework-dev"
-env: dev
-namespace: inpost-dev
+replicaCount: 5
+name: "inpost-homework-prd"
+env: prd
+namespace: inpost-prd
 image:
   repository: busybox
   tag: stable
@@ -19,7 +18,7 @@ service:
       targetPort: 8082
       name: soap
 ingress:
-  host: dev.example.com
+  host: prd.example.com
   paths:
     - path: /api
       pathType: Prefix
@@ -35,5 +34,5 @@ ingress:
       port: 8082
 
 secret:
-  username: "devUser"
-  password: "devPassword"
+  username: "prdUser"
+  password: "prdPassword"
