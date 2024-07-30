@@ -23,12 +23,15 @@ ingress:
     - path: /api
       pathType: Prefix
       name: api
+      port: 8080
     - path: /logs
       pathType: Prefix
       name: logs
+      port: 8081
     - path: /soap
       pathType: Prefix
       name: soap
+      port: 8082
 
 secret:
   username: "devUser"
