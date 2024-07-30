@@ -15,15 +15,15 @@ service:
     - port: 8082
       targetPort: 8082
 ingress:
-  hosts:
-    - host: dev.example.com
-      paths:
-        - path: /api
-          pathType: Prefix
-        - path: /logs
-          pathType: Prefix
-        - path: /soap
-          pathType: Prefix
+  host: dev.example.com
+  paths:
+    - path: /api
+      pathType: Prefix
+    - path: /logs
+      pathType: Prefix
+    - path: /soap
+      pathType: Prefix
+
 secret:
   username: "devUser"
   password: "devPassword"
