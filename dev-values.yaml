@@ -19,10 +19,13 @@ ingress:
   paths:
     - path: /api
       pathType: Prefix
+      name: api
     - path: /logs
       pathType: Prefix
+      name: logs
     - path: /soap
       pathType: Prefix
+      name: soap
 
 secret:
   username: "devUser"
