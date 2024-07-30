@@ -1,4 +1,7 @@
 replicaCount: 1
+name: "test"
+fullname: "test"
+namespace: inpost-dev
 image:
   repository: busybox
   tag: stable
